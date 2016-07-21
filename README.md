@@ -7,6 +7,8 @@ http://stackoverflow.com/questions/38479403/how-to-find-the-fractional-weighting
 
 Notes.
 
+It may be useful to think firstly of just one dimension such as Red and ignore the other two, this can simplify the problem.
+
 Feel free to use any Java or Scala library you need to use to get the job done. If there is a library which can do
 the maths for you then use it.
 
