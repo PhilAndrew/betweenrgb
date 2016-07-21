@@ -13,4 +13,5 @@ the maths for you then use it.
 You may need to use Gradle or Ant or Maven to build and run. I assume you can make that work.
 
 If there are multiple values for the solution of a problem then maybe one way to solve it is to return a function
-which can tell if a RGB is within the solution space. A fitness function.
+which can tell if a RGB is within the solution space. So your method could return a method, a Function<>. Also return one solution.
+
