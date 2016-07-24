@@ -4,23 +4,24 @@ package between.rgb;
 
 public class RGBColor {
 
-    private int red = 0;
-    private int green = 0;
-    private int blue = 0;
+	private int red = 0;
+	private int green = 0;
+	private int blue = 0;
 
-    /**
-     * Constructor
-     * @param r Red is in range 0 to 255 inclusive
-     * @param g Green is in range 0 to 255 inclusive
-     * @param b blue is in range 0 to 255 inclusive
-     */
-    public RGBColor(int r, int g, int b) {
-        red = r;
-        green = g;
-        blue = b;
-    }
+	/**
+	 * Constructor
+	 *
+	 * @param r Red is in range 0 to 255 inclusive
+	 * @param g Green is in range 0 to 255 inclusive
+	 * @param b blue is in range 0 to 255 inclusive
+	 */
+	public RGBColor(int r, int g, int b) {
+		red = r;
+		green = g;
+		blue = b;
+	}
 	
-	public RGBColor(RGBColor c){
+	public RGBColor(RGBColor c) {
 		red = c.red;
 		green = c.green;
 		blue = c.blue;
@@ -29,7 +30,7 @@ public class RGBColor {
 	public int getRed() {
 		return red;
 	}
-
+	
 	public int getGreen() {
 		return green;
 	}
@@ -38,8 +39,12 @@ public class RGBColor {
 		return blue;
 	}
 
-	
 	// functions needed for tests
+	@Override
+	public String toString() {
+		return "[r=" + red + ", g=" + green + ", b=" + blue + "]";
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (obj == null) {
@@ -69,7 +74,5 @@ public class RGBColor {
 		hash = 19 * hash + this.blue;
 		return hash;
 	}
-	
-	
-	
+
 }

@@ -26,4 +26,13 @@ public interface IFindWeightedColors {
      * @return Boolean, true if colors can be combined to create the given color.
      */
     Boolean canColorsBeCombinedToMakeThisColor(RGBColor color, List<RGBColor> colorsContributingToThisColor);
+	
+	/**
+     * Method to check whether specific solution is correct.
+     *
+     * @param color The color which is composed from the contributing colors.
+     * @param weightedColors The contributing colors with weights to check.
+     * @return Boolean, true if weighted colors merge to given color.
+     */
+	Boolean checkSolution(RGBColor color, List<WeightedRGBColor> weightedColors);
 }
